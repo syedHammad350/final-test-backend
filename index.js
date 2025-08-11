@@ -4,7 +4,7 @@ import cors from "cors"
 import MongoDb_connect from "./src/config/db.js"
 import AdminRoute from "./src/Routes/Admin.routes.js"
 import AuthRoutes from "./src/Routes/Auth.Routes.js"
-// import ImageRoutes from "./Routes/Image.Routes.js"
+
 import ImageRoute from "./src/Routes/Image.Routes.js"
 
 const app = express()
