@@ -12,7 +12,7 @@ const app = express()
 const PORT=8080
 dotenv.config()
 app.use(express.json())
-app.use(cors())
+app.use(cors({ origin: "*" }));
 MongoDb_connect()
 
 app.use('/api',AdminRoute)
