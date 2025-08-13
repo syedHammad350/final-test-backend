@@ -5,6 +5,6 @@ import {storage} from "../config/Cloudinary.js"
 
 const upload=multer({storage:storage})
 
-const ImageRoute=express.Router()
-ImageRoute.post('/upload', upload.single("image"), image)
-export default ImageRoute;
+const imageRoute=express.Router()
+imageRoute.post('/upload', upload.single("image"), image)
+export default imageRoute;
